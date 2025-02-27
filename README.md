@@ -1,7 +1,7 @@
-## 📊 Clasificación de Planes de Megaline - Sprint 9
+## 📉 Predicción de Churn en BetaBank - Sprint 10
 
 ## 🎯 Objetivo del Proyecto
-El objetivo de este proyecto es desarrollar un **modelo de clasificación** para **Megaline** que recomiende los **planes móviles Smart o Ultra** en función del uso del cliente. Se busca alcanzar una **precisión mínima del 75%** para mejorar la experiencia del usuario y la eficiencia operativa.
+Este proyecto tiene como objetivo predecir qué clientes de **Beta Bank** están en riesgo de abandonar el banco. Se optimizan las métricas **F1 y AUC-ROC** para mejorar la precisión del modelo y permitir estrategias efectivas de retención.
 
 ---
 
@@ -10,23 +10,23 @@ El objetivo de este proyecto es desarrollar un **modelo de clasificación** para
 - **Pandas** para manipulación de datos
 - **Scikit-learn** para modelos de machine learning 🤖
 - **NumPy** para cálculos numéricos
-- **Técnicas de optimización de hiperparámetros**
+- **Técnicas de balanceo de datos** (submuestreo y sobremuestreo)
 
 ---
 
 ## 🚀 Principales Desafíos y Soluciones
-1. **Clasificación de Clientes:** Se entrenaron varios modelos de machine learning para recomendar el plan óptimo.
-2. **Optimización de Modelos:** Se aplicó **GridSearchCV** para encontrar los mejores hiperparámetros y mejorar la precisión del modelo.
-3. **Evaluación del Modelo:** Se validó el modelo con métricas de **precisión, F1-score y matriz de confusión** para garantizar su efectividad.
-4. **Generalización del Modelo:** Se realizaron pruebas con datos nuevos para evaluar su desempeño en clientes no vistos previamente.
+1. **Desequilibrio de Clases:** Se aplicaron técnicas como **submuestreo y sobremuestreo** para equilibrar la distribución de datos.
+2. **Optimización de Modelos:** Se entrenaron múltiples modelos, seleccionando el que mejor optimizara la métrica **F1**.
+3. **Evaluación de Modelos:** Se compararon los resultados utilizando la métrica **AUC-ROC** para validar la calidad del modelo.
+4. **Generalización del Modelo:** Se realizaron pruebas en un conjunto de datos de prueba para garantizar su desempeño en nuevos datos.
 
 ---
 
 ## 🔧 Instrucciones para Ejecutar el Proyecto
 1️⃣ **Clonar el repositorio** y navegar al directorio del proyecto:
 ```bash
-git clone https://github.com/lesloyola/Clasificacion_Planes_Megaline_Sprint9.git
-cd Clasificacion_Planes_Megaline_Sprint9
+git clone https://github.com/lesloyola/BetaBank_Churn_Sprint10.git
+cd BetaBank_Churn_Sprint10
 ```
 2️⃣ **Instalar las dependencias necesarias:**
 ```bash
@@ -36,16 +36,16 @@ pip install pandas numpy scikit-learn
 ```bash
 jupyter notebook
 ```
-4️⃣ **Seguir los pasos detallados en el notebook** para la exploración, modelado y evaluación del modelo.
+4️⃣ **Seguir los pasos detallados en el notebook** para la exploración, modelado y validación de los resultados.
 
 ---
 
 ## 📊 Resultados y Conclusión
-📌 **Este proyecto permite a Megaline ofrecer planes personalizados** a sus clientes, **mejorando su satisfacción** y optimizando la asignación de recursos.
+📌 **Este proyecto permite a Beta Bank tomar decisiones informadas** para reducir la **fuga de clientes** y mejorar su retención.
 
 ---
 
-![Screenshot 2025-02-27 163324](https://github.com/user-attachments/assets/ac9592e2-377c-4c88-9ef4-4006878c1b3a)
+![Sprint 10](https://github.com/user-attachments/assets/aa7aa25a-f199-4312-94d1-0b21d7dec571)
 
 
 ---
